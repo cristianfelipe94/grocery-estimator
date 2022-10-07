@@ -3,9 +3,69 @@
     <h1>
       Welcome to Grocery Estimator
     </h1>
-    <p>
-      Comming soon
-    </p>
   </header>
+  <div>
+    <div>
+      <h2>Dashboard</h2>
+      <div class="form-section">
+        <h3>What would you like to register?</h3>
+        <div>
+          <div class="form-divider">
+            <label for="new-entry">Item</label>
+            <input type="text" id="new-entry" name="new-entry" minlength="1" maxlength="100">
+          </div>
+          <div class="form-divider">
+            <div>
+              <label for="price">Price</label>
+              <input type="number" id="price" name="price" minlength="1" maxlength="100">
+            </div>
+            <div>
+              <label for="amount">Amount and weight</label>
+              <input type="number" id="amount" name="amount" minlength="1" maxlength="100">
+            </div>
+            <div>
+              <label for="measurement">Amount measurement</label>
+              <select>
+                <option>Kilo(s), 1000g</option>
+                <option>Gramos</option>
+                <option>Litro(s), 1000l</option>
+                <option>Mililitros</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-divider">
+            <label for="new-entry-amount">Amount of this item</label>
+            <input type="number" id="new-entry-amount" name="new-entry-amount" minlength="1" maxlength="100">
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Where did you buy?</h3>
+        <div class="form-divider">
+          <label for="new-entry">New Store name</label>
+          <input type="text" id="new-entry" name="new-entry" minlength="1" maxlength="100">
+          <div>
+            <label for="new-entry">Add this item(s) to new Store register</label>
+            <button>New Store</button>
+          </div>
+        </div>
+        <div class="form-divider">
+          <label for="new-entry">From your collection</label>
+          <select>
+            <option>Super Ceci</option>
+            <option>Walmart</option>
+            <option>Price Smart</option>
+            <option>Super en Condominio</option>
+          </select>
+          <div>
+            <label for="new-entry">Select registered Store</label>
+            <button>Add item from collection</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 <router-outlet></router-outlet>

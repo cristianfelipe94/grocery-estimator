@@ -1,0 +1,24 @@
+$form-sections: deeppink;
+$form-borders: #279e8e;
+
+
+.form-section {
+  h3 {
+    border-bottom: 1px solid $form-sections;
+    padding: 10px;
+  }
+}
+
+.form-divider {
+  border-bottom: 1px solid $form-borders;
+  padding: 10px;
+
+  div {
+    margin: 20px 0;
+  }
+
+  input, select, button {
+    margin: 0 20px 0;
+    padding: 5px;
+  }
+}
